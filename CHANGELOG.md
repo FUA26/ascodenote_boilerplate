@@ -67,12 +67,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `components/ui/button.tsx` - Button component
 - `components/ui/button.stories.tsx` - Button stories
 
+
+## [0.3.0] - 2025-12-12
+
+### Added
+
+#### Core Architecture & Type Safety
+- ✅ Implemented T3 Env for type-safe environment variables with Zod validation
+- ✅ Setup next-intl for internationalization (English & Indonesian)
+- ✅ Created middleware for automatic locale detection and routing
+- ✅ Added translation files for landing page content
+- ✅ Integrated env validation in Next.js config
+
+### Configuration Files Added
+- `src/env.ts` - T3 Env schema and validation
+- `src/i18n/request.ts` - i18n request configuration
+- `src/middleware.ts` - Locale routing middleware
+- `messages/en.json` - English translations
+- `messages/id.json` - Indonesian translations
+
+### Scripts/Features Added
+- Environment variable validation on build/dev
+- Automatic locale routing (`/en/...`, `/id/...`)
+- Type-safe environment variable access
+
 ## [Unreleased]
-
-### Planned for v0.3.0 - Core Architecture & Type Safety
-
-- Implement T3 Env for type-safe environment variables
-- Setup i18n with next-intl and Crowdin integration
 
 ### Planned for v0.4.0 - Features & Optimization
 
