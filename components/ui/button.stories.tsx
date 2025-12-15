@@ -106,7 +106,7 @@ export const AsChild: Story = {
     docs: {
       description: {
         story:
-          "When `asChild` is true, the Button component will render its child element instead of a button, while applying button styles. This is useful for creating link buttons or other custom elements.",
+          "When asChild is true, the Button component will render its child element instead of a button, while applying button styles. This is useful for creating link buttons or other custom elements.",
       },
     },
   },
