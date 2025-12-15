@@ -13,6 +13,7 @@ import {
   TestTube2,
   FileCode2,
   Sparkles,
+  User,
 } from "lucide-react";
 
 const features = [
@@ -39,6 +40,12 @@ const features = [
     title: "Type-Safe Environment",
     description:
       "Runtime validation with T3 Env and Zod for bulletproof configs.",
+  },
+  {
+    icon: User,
+    title: "Authentication Pages",
+    description:
+      "Ready-to-use login and register pages with password strength indicator and social login.",
   },
   {
     icon: Globe,
@@ -97,7 +104,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="border-border bg-muted/50 mb-8 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm">
               <Sparkles className="text-primary h-4 w-4" />
-              <span className="text-muted-foreground">Version 0.2.0</span>
+              <span className="text-muted-foreground">Version 0.3.0</span>
             </div>
 
             <h1 className="from-foreground to-foreground/60 bg-gradient-to-br bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-7xl">
@@ -110,11 +117,14 @@ export default function HomePage() {
               Ship faster with confidence.
             </p>
 
-            <div className="mt-10 flex items-center justify-center gap-4">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" asChild>
-                <Link href="/docs">Get Started</Link>
+                <Link href="/auth/register">Get Started Free</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
+                <Link href="/auth/login">Sign In</Link>
+              </Button>
+              <Button size="lg" variant="ghost" asChild>
                 <Link
                   href="https://github.com/yourusername/boilerplate"
                   target="_blank"
@@ -122,6 +132,22 @@ export default function HomePage() {
                   View on GitHub
                 </Link>
               </Button>
+            </div>
+
+            {/* Quick Stats */}
+            <div className="text-muted-foreground mt-12 flex flex-wrap items-center justify-center gap-8 text-sm">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <span>Authentication Ready</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <span>Type-Safe Environment</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-green-500" />
+                <span>Dark Mode Support</span>
+              </div>
             </div>
           </div>
 

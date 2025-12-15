@@ -54,8 +54,12 @@ export function Header() {
 
           <ThemeToggle />
 
+          <Button size="sm" variant="ghost" className="hidden sm:flex" asChild>
+            <Link href="/auth/login">Login</Link>
+          </Button>
+
           <Button size="sm" className="hidden sm:flex" asChild>
-            <Link href="/docs">Get Started</Link>
+            <Link href="/auth/register">Sign Up</Link>
           </Button>
         </div>
       </nav>
