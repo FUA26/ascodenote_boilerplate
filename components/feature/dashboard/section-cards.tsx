@@ -12,16 +12,22 @@ import {
 
 export function SectionCards() {
   return (
-    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
-      <Card className="@container/card">
+    <div className="grid grid-cols-1 gap-4 px-4 lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+      {/* Total Revenue Card */}
+      <Card className="border-border/50 bg-card/50 @container/card backdrop-blur-sm">
         <CardHeader>
-          <CardDescription>Total Revenue</CardDescription>
+          <CardDescription className="text-muted-foreground">
+            Total Revenue
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             $1,250.00
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
+            <Badge
+              variant="outline"
+              className="border-emerald-200/50 bg-emerald-50/50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
+            >
+              <IconTrendingUp className="size-3.5" />
               +12.5%
             </Badge>
           </CardAction>
@@ -35,15 +41,22 @@ export function SectionCards() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="@container/card">
+
+      {/* New Customers Card */}
+      <Card className="border-border/50 bg-card/50 @container/card backdrop-blur-sm">
         <CardHeader>
-          <CardDescription>New Customers</CardDescription>
+          <CardDescription className="text-muted-foreground">
+            New Customers
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             1,234
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingDown />
+            <Badge
+              variant="outline"
+              className="border-red-200/50 bg-red-50/50 text-red-700 dark:border-red-500/20 dark:bg-red-500/10 dark:text-red-400"
+            >
+              <IconTrendingDown className="size-3.5" />
               -20%
             </Badge>
           </CardAction>
@@ -57,15 +70,22 @@ export function SectionCards() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="@container/card">
+
+      {/* Active Accounts Card */}
+      <Card className="border-border/50 bg-card/50 @container/card backdrop-blur-sm">
         <CardHeader>
-          <CardDescription>Active Accounts</CardDescription>
+          <CardDescription className="text-muted-foreground">
+            Active Accounts
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             45,678
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
+            <Badge
+              variant="outline"
+              className="border-emerald-200/50 bg-emerald-50/50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
+            >
+              <IconTrendingUp className="size-3.5" />
               +12.5%
             </Badge>
           </CardAction>
@@ -77,15 +97,22 @@ export function SectionCards() {
           <div className="text-muted-foreground">Engagement exceed targets</div>
         </CardFooter>
       </Card>
-      <Card className="@container/card">
+
+      {/* Growth Rate Card */}
+      <Card className="border-border/50 bg-card/50 @container/card backdrop-blur-sm">
         <CardHeader>
-          <CardDescription>Growth Rate</CardDescription>
+          <CardDescription className="text-muted-foreground">
+            Growth Rate
+          </CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             4.5%
           </CardTitle>
           <CardAction>
-            <Badge variant="outline">
-              <IconTrendingUp />
+            <Badge
+              variant="outline"
+              className="border-emerald-200/50 bg-emerald-50/50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-400"
+            >
+              <IconTrendingUp className="size-3.5" />
               +4.5%
             </Badge>
           </CardAction>

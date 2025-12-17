@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "header": "Executive Summary",
+    "type": "Narrative",
+    "status": "Done",
+    "target": "5",
+    "limit": "10",
+    "reviewer": "Eddie Lake"
+  },
+  {
+    "id": 2,
+    "header": "Technical Approach",
+    "type": "Technical Approach",
+    "status": "In Progress",
+    "target": "15",
+    "limit": "20",
+    "reviewer": "Jamik Tashpulatov"
+  },
+  {
+    "id": 3,
+    "header": "Management Plan",
+    "type": "Narrative",
+    "status": "Done",
+    "target": "8",
+    "limit": "12",
+    "reviewer": "Emily Whalen"
+  },
+  {
+    "id": 4,
+    "header": "Past Performance",
+    "type": "Focus Documents",
+    "status": "In Progress",
+    "target": "3",
+    "limit": "5",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 5,
+    "header": "Cost Proposal",
+    "type": "Design",
+    "status": "Done",
+    "target": "10",
+    "limit": "15",
+    "reviewer": "Eddie Lake"
+  },
+  {
+    "id": 6,
+    "header": "Resumes and Qualifications",
+    "type": "Focus Documents",
+    "status": "In Progress",
+    "target": "20",
+    "limit": "25",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 7,
+    "header": "Quality Assurance Plan",
+    "type": "Narrative",
+    "status": "Done",
+    "target": "6",
+    "limit": "10",
+    "reviewer": "Jamik Tashpulatov"
+  },
+  {
+    "id": 8,
+    "header": "Risk Management",
+    "type": "Technical Approach",
+    "status": "In Progress",
+    "target": "7",
+    "limit": "12",
+    "reviewer": "Emily Whalen"
+  },
+  {
+    "id": 9,
+    "header": "Transition Plan",
+    "type": "Narrative",
+    "status": "Done",
+    "target": "5",
+    "limit": "8",
+    "reviewer": "Eddie Lake"
+  },
+  {
+    "id": 10,
+    "header": "Staffing Plan",
+    "type": "Capabilities",
+    "status": "In Progress",
+    "target": "10",
+    "limit": "15",
+    "reviewer": "Assign reviewer"
+  }
+]

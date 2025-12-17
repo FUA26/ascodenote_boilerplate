@@ -7,6 +7,7 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
+    data-slot="card"
     className={cn(
       "bg-card text-card-foreground rounded-xl border shadow",
       className
@@ -22,7 +23,10 @@ const CardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    className={cn(
+      "flex flex-wrap items-start gap-x-4 gap-y-1.5 p-6 **:data-[slot=card-action]:shrink-0",
+      className
+    )}
     {...props}
   />
 ));
@@ -34,7 +38,10 @@ const CardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("leading-none font-semibold tracking-tight", className)}
+    className={cn(
+      "w-full text-base leading-none font-semibold tracking-tight",
+      className
+    )}
     {...props}
   />
 ));
@@ -46,11 +53,24 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-muted-foreground text-sm", className)}
+    className={cn("text-muted-foreground w-full text-sm", className)}
     {...props}
   />
 ));
 CardDescription.displayName = "CardDescription";
+
+const CardAction = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    data-slot="card-action"
+    className={cn("ml-auto", className)}
+    {...props}
+  />
+));
+CardAction.displayName = "CardAction";
 
 const CardContent = React.forwardRef<
   HTMLDivElement,
@@ -78,5 +98,6 @@ export {
   CardFooter,
   CardTitle,
   CardDescription,
+  CardAction,
   CardContent,
 };
