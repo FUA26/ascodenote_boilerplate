@@ -91,10 +91,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated `app/layout.tsx` to use typed environment variables
 - Enhanced `.env.example` with validation requirements and examples
 
+## [0.5.0] - 2025-12-17
+
+### Changed
+
+#### Sidebar Layout & UI Refinement
+
+- ♻️ Reorganized sidebar layout by moving `NavUser` from footer to header
+- ♻️ Positioned `NavUser` as second item after logo in sidebar header
+- ♻️ Removed `SidebarFooter` component when not needed
+- ♻️ Cleaned up unused imports in sidebar components
+
+### Improved
+
+- 🎨 Better visual hierarchy in sidebar navigation
+- 🎨 Improved user profile accessibility and visibility
+- 🎨 More consistent with modern dashboard UI patterns
+- 🧹 Cleaner component structure and code organization
+
+### Files Modified
+
+- `components/layout/app-sidebar.tsx` - Sidebar structure reorganization
+- `app/(backoffice)/layout.tsx` - Layout updates
+
+### Documentation
+
+- Added `docs/v0.5.0-sidebar-layout.md` - Comprehensive implementation guide
+
 ## [Unreleased]
 
-### Planned for v0.4.0 - Features & Optimization
+### Planned for v0.6.0 - Authentication & User Management
 
-- Setup React Hook Form with Zod validation
-- Integrate LogTape and Better Stack for logging
-- Add SEO metadata, sitemap, and robots.txt generation
+- User authentication system
+- Role-based access control
+- User profile management
