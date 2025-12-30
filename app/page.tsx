@@ -13,6 +13,7 @@ import {
   FileCode2,
   Sparkles,
   User,
+  Table2,
 } from "lucide-react";
 
 const features = [
@@ -76,6 +77,12 @@ const features = [
     description:
       "VSCode configs, auto-formatting, and hot reload for seamless development.",
   },
+  {
+    icon: Table2,
+    title: "Advanced Data Table",
+    description:
+      "TanStack Table with faceted filters, multi-sort, density control, and bulk actions.",
+  },
 ];
 
 export default function HomePage() {
@@ -97,7 +104,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-3xl text-center">
             <div className="border-border bg-muted/50 mb-8 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm">
               <Sparkles className="text-primary h-4 w-4" />
-              <span className="text-muted-foreground">Version 0.5.0</span>
+              <span className="text-muted-foreground">Version 0.6.0</span>
             </div>
 
             <h1 className="from-foreground to-foreground/60 bg-linear-to-br bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-7xl">
@@ -119,6 +126,9 @@ export default function HomePage() {
               </Button>
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/dashboard">View Dashboard</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/demo/table">Data Table Demo</Link>
               </Button>
               <Button size="lg" variant="ghost" asChild>
                 <Link

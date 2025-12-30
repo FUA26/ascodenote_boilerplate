@@ -36,6 +36,7 @@ A production-ready, feature-rich Next.js boilerplate with TypeScript, Tailwind C
 ### UI Development
 
 - 🎉 **Storybook** - Isolated component development and documentation
+- 📊 **Advanced Data Table** - TanStack Table with faceted filters, multi-column sort, density control, and bulk actions
 
 ### Logging & Monitoring
 
@@ -59,7 +60,9 @@ A production-ready, feature-rich Next.js boilerplate with TypeScript, Tailwind C
 ```
 .
 ├── app/                    # Next.js App Router pages
+│   └── demo/table/         # Advanced Data Table demo
 ├── components/             # Reusable React components
+│   └── ui/                 # Shadcn UI components
 ├── lib/                    # Utility functions and shared logic
 ├── messages/               # i18n translation files
 │   └── en.json            # English translations
@@ -253,6 +256,49 @@ export const Primary: Story = {
   },
 };
 ```
+
+## 📊 Advanced Data Table
+
+This boilerplate includes a feature-rich data table built with TanStack Table and Shadcn UI.
+
+### Features
+
+- **Faceted Filters** - Status and Priority filters with checkboxes and counts
+- **Multi-Column Sort** - Add multiple sort criteria with drag-to-reorder
+- **Date Filter** - Calendar picker for date-based filtering
+- **Column Visibility** - Searchable dropdown to show/hide columns
+- **Density Control** - Adjust row height (Short/Medium/Tall/Extra Tall)
+- **Row Actions** - Dropdown menu with keyboard shortcuts
+- **Bulk Actions** - Floating action bar for selected rows (Dice UI style)
+- **Export** - Export filtered data to CSV
+
+### Demo
+
+Visit `/demo/table` to see the data table in action.
+
+### Usage
+
+```tsx
+import { DataTable } from "@/app/demo/table/data-table";
+import { columns } from "@/app/demo/table/columns";
+import { tasks } from "@/app/demo/table/data/tasks";
+
+export default function TasksPage() {
+  return <DataTable columns={columns} data={tasks} />;
+}
+```
+
+### Components
+
+| Component                | Description                               |
+| ------------------------ | ----------------------------------------- |
+| `DataTable`              | Main table with pagination and action bar |
+| `DataTableToolbar`       | Search, filters, and action buttons       |
+| `DataTableFacetedFilter` | Checkbox filter with counts               |
+| `DataTableDateFilter`    | Date picker filter                        |
+| `DataTableColumnHeader`  | Sortable header with Asc/Desc/Hide menu   |
+| `DataTableViewOptions`   | Column visibility toggle                  |
+| `DataTableActionBar`     | Floating bulk action bar                  |
 
 ## 🪝 Git Hooks
 
